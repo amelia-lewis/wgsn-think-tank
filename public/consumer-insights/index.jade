@@ -1,0 +1,21 @@
+extends ../layout
+
+block append vars
+  - bodyclass = 'category-view'
+
+block content
+  .content-wrap
+    .row
+      .col-xs-12.col-sm-2.bg-xlt-grey
+        include ../partials/sub-nav
+
+      .col-xs-12.col-sm-10.block-top-md
+        h4 &nbsp;
+        hr
+        h1 Consumer Insights
+
+        - var n = 0
+        .row
+          while n < 30
+            .col-xs-12.col-sm-4.col-md-3: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+            - n++

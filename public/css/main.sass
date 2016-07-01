@@ -18,6 +18,16 @@ body
     position: relative
     top: 40px
 
+    @media (min-width: 1500px)
+      &:after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        width: calc((100vw - 1500px) / 2)
+        background: $xlt-grey
+
   .content-wrap
     width: calc(100% - 20px)
     max-width: 1500px

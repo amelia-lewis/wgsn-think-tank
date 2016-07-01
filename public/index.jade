@@ -5,7 +5,7 @@ block append vars
 
 block content
   .content-wrap
-    h1.page-title Think Tank
+    h1.main-title Think Tank
 
     .row
       .col-xs-12.col-sm-2.bg-xlt-grey
@@ -13,10 +13,10 @@ block content
 
       .col-xs-12.col-sm-10
         .row
-          .col-xs-12.col-sm-7.bg-xlt-grey
+          .col-xs-12.col-sm-7.col-md-8.bg-xlt-grey
             include partials/featured-stories
-            include partials/news
 
-          .col-xs-12.col-sm-5
+          .col-xs-12.col-sm-5.col-md-4
+            include partials/news
             include partials/most-viewed
             include partials/recommended-for-you
