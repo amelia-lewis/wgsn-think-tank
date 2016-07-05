@@ -5,12 +5,13 @@ block append vars
 
 block content
   .content-wrap
+    .btn-menu.block-ver-xs.block-hor-sm.bg-black.text-uppercase.text-smaller Menu
     .row
-      .col-xs-12.col-sm-2.bg-xlt-grey
+      .col-xs-12.col-sm-2.bg-xlt-grey.sub-nav-container
         include ../../partials/sub-nav
 
       .col-xs-12.col-sm-10.block-top-md
-        h4 Consumer Insights
+        a(href="/consumer-insights"): h4.directory-page-subtitle Consumer Insights
         hr
         h1 Shopping Trends
 

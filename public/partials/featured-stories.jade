@@ -1,12 +1,32 @@
+mixin featured-story(img, date, title, description, category)
+  .featured-story
+    .img(style="background-image: url(" + img + ");")
+    .text.block-md.text-center
+      p.text-uppercase.text-grey.text-smaller= date
+      h2.text-uppercase= title
+      p= description
+      p.text-uppercase.text-grey.text-smaller= category
+
 section#featured-stories.block-top-md
   .row
-    .col-xs-12: .block-bot-md: .block.block-ver-xl.bg-lt-grey: .block-ver-xl
-    .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
-    .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
-    .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
-    .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
-    .col-xs-12: .block-bot-md: .block.block-ver-xl.bg-lt-grey: .block-ver-xl
-    .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
-    .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
-    .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
-    .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+    //- .col-xs-12: .block-bot-md: .block.block-ver-xl.bg-lt-grey: .block-ver-xl
+    //- .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+    //- .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+    //- .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+    //- .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+    //- .col-xs-12: .block-bot-md: .block.block-ver-xl.bg-lt-grey: .block-ver-xl
+    //- .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+    //- .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+    //- .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+    //- .col-xs-12.col-sm-6: .block-bot-md: .block.block-ver-xl.bg-lt-grey
+
+    .col-xs-12: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12.col-sm-6: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12.col-sm-6: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12.col-sm-6: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12.col-sm-6: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12.col-sm-6: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12.col-sm-6: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12.col-sm-6: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")
+    .col-xs-12.col-sm-6: +featured-story("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "Social media")

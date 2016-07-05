@@ -81,10 +81,14 @@ h1
   font-size: 2.6em
 
 h2
-  font-size: 1.8em
+  font-size: 1.2em
+  line-height: 1.2em
+
+  @media (min-width: $screen-xs-min)
+    font-size: 1.4em
 
 h3
-  font-size: 1.4em
+  font-size: 1.2em
 
 h4
   font-size: 0.8em
@@ -119,6 +123,10 @@ ul.ul-bare
 
   @media (min-width: 1500px)
     right: calc((100vw - 1500px) / 2)
+
+.directory-page-subtitle
+  @media (max-width: $screen-xs-min)
+    transform: translate3d(60px, 0, 0)
 
 body.headroom--not-top
   .main-title
