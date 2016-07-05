@@ -1,8 +1,19 @@
+mixin news-item(img, date, title)
+  .news-item.overflow-auto
+    .img.pull-left(style="background-image: url(" + img + ");")
+    .text.pull-left.block-hor-sm
+      p.text-uppercase.text-grey.text-smaller= date
+      p.tight= title
+
 section#news.block-top-md
   h4 News
   hr
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
+  +news-item("", "July 5th, 2016", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.")
+  .block-ver-md: hr.hr-alt
+  +news-item("", "July 5th, 2016", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.")
+  .block-ver-md: hr.hr-alt
+  +news-item("", "July 5th, 2016", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.")
+  .block-ver-md: hr.hr-alt
+  +news-item("", "July 5th, 2016", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.")
+  .block-ver-md: hr.hr-alt
+  +news-item("", "July 5th, 2016", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.")

@@ -1,8 +1,19 @@
+mixin recommended-item(img, date, title)
+  .recommended-item.overflow-auto
+    .img.pull-left(style="background-image: url(" + img + ");")
+    .text.pull-left.block-hor-sm
+      p.tight.text-uppercase= title
+      p.text-uppercase.text-grey.text-smaller= date
+
 section#recommended-for-you.block-top-md
   h4 Recommended for You
   hr
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
+  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
+  .block-ver-md: hr.hr-alt
+  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
+  .block-ver-md: hr.hr-alt
+  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
+  .block-ver-md: hr.hr-alt
+  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
+  .block-ver-md: hr.hr-alt
+  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")

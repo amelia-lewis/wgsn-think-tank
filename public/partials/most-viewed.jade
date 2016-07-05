@@ -1,8 +1,19 @@
+mixin most-viewed-item(img, date, title)
+  .most-viewed-item.overflow-auto
+    .img.pull-left(style="background-image: url(" + img + ");")
+    .text.pull-left.block-hor-sm
+      p.tight.text-uppercase= title
+      p.text-uppercase.text-grey.text-smaller= date
+
 section#most-viewed.block-top-md
   h4 Most viewed
   hr
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
-  .block-bot-md: .block.block-ver-lg.bg-lt-grey
+  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  .block-ver-md: hr.hr-alt
+  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  .block-ver-md: hr.hr-alt
+  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  .block-ver-md: hr.hr-alt
+  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  .block-ver-md: hr.hr-alt
+  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
