@@ -6,11 +6,11 @@ block append vars
 mixin report-item(img, date, title, category)
   .report-item
     .img(style="background-image: url(" + img + ");")
-    .text.block-md.text-center
+    .text.block-ver-md.text-center
       p.text-uppercase.text-grey.text-smaller= date
       h2.text-uppercase= title
       p= description
-      p.text-uppercase.text-grey.text-smaller= category
+      //- p.text-uppercase.text-grey.text-smaller= category
 
 block content
   .content-wrap

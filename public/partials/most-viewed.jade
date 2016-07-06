@@ -1,19 +1,21 @@
-mixin most-viewed-item(img, date, title)
-  .most-viewed-item.overflow-auto
+mixin most-viewed-item(number, img, date, title)
+  .most-viewed-item
     .img.pull-left(style="background-image: url(" + img + ");")
     .text.pull-left.block-hor-sm
-      p.tight.text-uppercase= title
-      p.text-uppercase.text-grey.text-smaller= date
+      .text-aligner
+        p.text-uppercase.text-grey.text-smaller.tight= date
+        p.tight.text-uppercase= title
+    .number.text-center= number
 
 section#most-viewed.block-top-md
   h4 Most viewed
   hr
-  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("1", "", "July 5th, 2016", "The Buzz - Ideaism")
   .block-ver-md: hr.hr-alt
-  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("2", "", "July 5th, 2016", "The Buzz - Ideaism")
   .block-ver-md: hr.hr-alt
-  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("3", "", "July 5th, 2016", "The Buzz - Ideaism")
   .block-ver-md: hr.hr-alt
-  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("4", "", "July 5th, 2016", "The Buzz - Ideaism")
   .block-ver-md: hr.hr-alt
-  +most-viewed-item("", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("5", "", "July 5th, 2016", "The Buzz - Ideaism")
