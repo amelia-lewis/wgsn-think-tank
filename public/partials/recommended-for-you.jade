@@ -3,18 +3,18 @@ mixin recommended-item(img, date, title)
     .img.pull-left(style="background-image: url(" + img + ");")
     .text.pull-left.block-hor-sm
       .text-aligner
-        p.text-uppercase.text-grey.text-smaller.tight= date
+        //- p.text-uppercase.text-grey.text-smaller.tight= date
         p.tight.text-uppercase= title
 
-section#recommended-for-you.block-ver-md
+section#recommended-for-you.block-top-md
   h4 Recommended for You
   hr
-  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
+  +recommended-item("", "July 5th, 2016", "Modern India – Social & Cultural Influences")
   .block-ver-md: hr.hr-alt
   +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
   .block-ver-md: hr.hr-alt
-  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
+  +recommended-item("", "July 5th, 2016", "The Buzz – Ideaism")
   .block-ver-md: hr.hr-alt
-  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
+  +recommended-item("", "July 5th, 2016", "The Creative Archives")
   .block-ver-md: hr.hr-alt
-  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - June 2016")
+  +recommended-item("", "July 5th, 2016", "Art Snapshot, London - May 2016")

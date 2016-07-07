@@ -3,19 +3,19 @@ mixin most-viewed-item(number, img, date, title)
     .img.pull-left(style="background-image: url(" + img + ");")
     .text.pull-left.block-hor-sm
       .text-aligner
-        p.text-uppercase.text-grey.text-smaller.tight= date
+        //- p.text-uppercase.text-grey.text-smaller.tight= date
         p.tight.text-uppercase= title
     .number.text-center= number
 
-section#most-viewed.block-top-md
+section#most-viewed.block-ver-md
   h4 Most viewed
   hr
   +most-viewed-item("1", "", "July 5th, 2016", "The Buzz - Ideaism")
   .block-ver-md: hr.hr-alt
-  +most-viewed-item("2", "", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("2", "", "July 5th, 2016", "Psychedelic")
   .block-ver-md: hr.hr-alt
-  +most-viewed-item("3", "", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("3", "", "July 5th, 2016", "Instagram in China: How Brands are Using it")
   .block-ver-md: hr.hr-alt
-  +most-viewed-item("4", "", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("4", "", "July 5th, 2016", "Art Snapshot, London - June 2016")
   .block-ver-md: hr.hr-alt
-  +most-viewed-item("5", "", "July 5th, 2016", "The Buzz - Ideaism")
+  +most-viewed-item("5", "", "July 5th, 2016", "Skincare Concepts - 2016")
