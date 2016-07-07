@@ -1,9 +1,11 @@
-// ====================
-// Featured Story
-// ====================
+.lg-item,
+.sm-item
+  img
+    transition: all 300ms
+
 #featured-stories
   .col-xs-12
-    .featured-story      
+    .lg-item
       .text
         margin: -60px auto 40px
         background: white
@@ -23,13 +25,7 @@
         &:nth-child(10)
           display: none
 
-
-// ====================
-// News
-// ====================
-.news-item,
-.most-viewed-item,
-.recommended-item
+.sm-item
   position: relative
   display: flex
   align-items: center
@@ -51,3 +47,19 @@
     width: 66px
     height: 100px
     overflow: hidden
+
+#news,
+#results-news,
+#results-blog
+  .sm-item
+    p:nth-of-type(2)
+      text-transform: none
+
+#results-reports
+  .sm-item
+    img
+      @media (min-width: $screen-sm-min)
+        height: 120px
+
+      @media (min-width: $screen-md-min)
+        height: 160px

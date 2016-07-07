@@ -1,0 +1,9 @@
+mixin sm-item(img, info1, info2, title, description, number)
+  .sm-item.overflow-auto
+    img(src=img height="100")
+    .text.block-hor-sm
+      p.text-uppercase.text-grey.text-smaller.tight= info1
+      p.text-uppercase.tight= title
+      p.text-uppercase.text-grey.text-smaller.tight= info2
+      p.text-smaller= description
+    .number.text-center= number

@@ -51,7 +51,7 @@
 .text-lowercase
   text-transform: lowercase
 
-.text-uppercase, h1, h4
+.text-uppercase, h1, h2, h3, h4
   text-transform: uppercase
 
 .text-capitalize
@@ -77,22 +77,6 @@ ul, ol
 // ====================
 // Sizes
 // ====================
-h1
-  font-size: 2.6em
-
-h2
-  font-size: 1.2em
-  line-height: 1.2em
-
-  @media (min-width: $screen-xs-min)
-    font-size: 1.4em
-
-h3
-  font-size: 1.2em
-
-h4
-  font-size: 0.8em
-
 .text-smaller, small
   font-size: 0.8em
 
@@ -106,6 +90,9 @@ a
 ul.ul-bare
   list-style: none
   padding: 0
+
+.text-grey
+  color: $md-grey
 
 .main-title
   position: fixed

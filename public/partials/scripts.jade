@@ -13,7 +13,10 @@ script.
   $("body").headroom({});
 
 script.
-  $("#sub-nav").sticky({topSpacing: 40});
+  $("#sub-nav").sticky({
+    topSpacing: 40,
+    bottomSpacing: 100
+  });
 
 script.
   $('.btn-menu').on('click', function() {

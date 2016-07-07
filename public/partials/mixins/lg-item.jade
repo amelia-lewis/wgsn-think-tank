@@ -1,0 +1,9 @@
+mixin lg-item(img, info1, info2, title, description, number)
+  .lg-item.overflow-auto
+    img(src=img width="100%")
+    .text.block-top-sm.block-bot-md.block-hor-sm.text-center
+      p.text-uppercase.text-grey.text-smaller.tight= info1
+      h2= title
+      p.text-uppercase.text-grey.text-smaller.tight= info2
+      p= description
+    .number.text-center= number

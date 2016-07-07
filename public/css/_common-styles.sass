@@ -47,13 +47,12 @@ hr
 .bg-lt-grey
   background: $lt-grey
 
-@media (min-width: $screen-sm-min)
-  #news
-    margin-top: 80px
+#news
+  @media (min-width: $screen-sm-min)
+    margin-top: 100px
 
-// @media (max-width: $screen-xs-min)
-//   #featured-stories
-//     margin-top: 30px
+  @media (min-width: $screen-md-min)
+    margin-top: 120px
 
 
 // ====================
@@ -69,3 +68,4 @@ button
   font-family: "Coming Soon", sans-serif
   font-size: 1em
   @extend .text-uppercase
+  cursor: pointer

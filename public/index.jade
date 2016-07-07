@@ -1,5 +1,10 @@
 extends layout
 
+include partials/mixins/sm-item
+//- img, info1, info2, title, description, number
+include partials/mixins/lg-item
+//- img, info1, info2, title, description
+
 block append vars
   - bodyclass = 'index'
 
@@ -16,9 +21,67 @@ block content
       .col-xs-12.col-sm-12.col-md-12.col-lg-10
         .row
           .col-xs-12.col-sm-12.col-md-7.col-lg-8.bg-xlt-grey
-            include partials/featured-stories
+            section#featured-stories.block-top-md
+              .row
+                .col-xs-12: +lg-item("/img/rectangle.jpg", "June 27th, 2016", "", "Modern India - Social & Cultural Influences", "From Hindu hip-hop anthems to female motorcycle gangs, India's newest cultural landscape goes far beyond Bollywood.", "")
+                .col-xs-6: +lg-item("/img/rectangle.jpg", "June 24th, 2016", "", "Skincare concepts - 2016", "Exclusive interviews with industry experts reveal the game-changing formulations and movements to keep an eye on.", "")
+                .col-xs-6: +lg-item("/img/rectangle.jpg", "June 16th, 2016", "", "Instagram in china: how brands are using it", "Instagram, although blocked in China, is quickly popu- larising as the go-to creative online community as con- sumers seek an international, uncensored experience.", "")
+                .col-xs-6: +lg-item("/img/rectangle.jpg", "June 14th, 2016", "", "Arts snapshot, London – june 2016", "Geometric shapes and linear architectural forms make up the key trends this month.", "")
+                .col-xs-6: +lg-item("/img/rectangle.jpg", "June 12th, 2016", "", "Top five – let's get phygital", "Here's our best-of from this new third space.", "")
+                .col-xs-12: +lg-item("/img/rectangle.jpg", "June 10th, 2016", "", "Psychedelic", "LSD is back in a big way. Acid was a club favourite in its 1960s heyday.", "")
+                .col-xs-6: +lg-item("/img/rectangle.jpg", "June 6th, 2016", "", "Less Trade, More Show", "Exclusive interviews with industry experts reveal the game-changing formulations and movements to keep an eye on.", "")
+                .col-xs-6: +lg-item("/img/rectangle.jpg", "June 1st, 2016", "", "Arts Snapshot, London – May 2016", "Instagram, although blocked in China, is quickly popu- larising as the go-to creative online community as con- sumers seek an international, uncensored experience.", "")
+                .col-xs-6: +lg-item("/img/rectangle.jpg", "May 30th, 2016", "", "The Creative Archives", "Geometric shapes and linear architectural forms make up the key trends this month.", "")
+                .col-xs-6: +lg-item("/img/rectangle.jpg", "May 29th, 2016", "", "Text Talk", "Here's our best-of from this new third space.", "")
 
           .col-xs-12.col-sm-12.col-md-5.col-lg-4
-            include partials/news
-            include partials/recommended-for-you
-            include partials/most-viewed
+            //- NEWS
+            section#news.block-bot-lg
+              .overflow-auto
+                h3.pull-left News
+                h4.pull-right.text-grey View all
+              hr
+              .block-bot-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Nike sales, future orders disappoint as adidas gains ground.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Much ado about fashion as Selfridges opens pop-up store theatre as part of Shakespeare anniversary celebrations.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Market weakness hits J Front shares as quarterly sales, profits slump.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Shinsegae builds western-influenced mega mall in shift away from core department stores.", "", "")
+              hr.hr-alt
+            
+            //- RECOMMENDED FOR YOU
+            section#recommended-for-you.block-bot-lg
+              .overflow-auto
+                h3.pull-left Recommended for you
+                h4.pull-right.text-grey View all
+              hr
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "Modern India – Social & Cultural Influences", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "Art Snapshot, London - June 2016", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "The Buzz – Ideaism", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "The Creative Archives", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "Art Snapshot, London - May 2016", "", "")
+              hr.hr-alt
+            
+            //- MOST VIEWED
+            section#most-viewed.block-bot-lg
+              .overflow-auto
+                h3.pull-left Most viewed
+                h4.pull-right.text-grey View all
+              hr
+              .block-bot-sm: +sm-item("/img/square.jpg", "", "", "The Buzz - Ideaism", "", "1")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "Psychedelic", "", "2")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "Instagram in China: How Brands are Using it", "", "3")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "Art Snapshot, London - June 2016", "", "4")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "", "", "Skincare Concepts - 2016", "", "5")
+              hr.hr-alt

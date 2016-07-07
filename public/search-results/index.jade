@@ -1,0 +1,91 @@
+extends ../layout
+include ../partials/mixins/sm-item
+//- img, info1, info2, title, description, number
+
+block append vars
+  - bodyclass = 'search-results-view'
+
+block content
+  .content-wrap
+    .btn-menu.block-ver-xs.block-hor-sm.bg-black.text-uppercase.text-smaller Menu
+    .row
+      .col-lg-2.bg-xlt-grey.sub-nav-container
+        include ../partials/sub-nav
+
+      .col-xs-12.col-sm-12.col-md-12.col-lg-10.block-top-md
+        h4.directory-page-subtitle "Instagram Europe 2016"
+        hr
+        h1 Search Results
+
+        .row
+          .col-xs-12.col-sm-12.col-md-7.col-lg-8
+            section#results-reports.block-bot-md
+              .overflow-auto
+                h3.pull-left Reports
+                h4.pull-right.text-grey View all results
+              hr
+              h4 200 reports found
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+              .block-ver-sm: +sm-item("/img/rectangle.jpg", "July 5th, 2016", "Analysis", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "...Lorem ipsum dolor sit amet Instagram 2016, consectetur adipiscing elit. Maecenas ac neque nec erat imperdiet dapibus. Integer ac malesuada lacus, Europe pelleurn...", "")
+
+              .text-center.block-ver-lg: button Load more
+
+          .col-xs-12.col-sm-12.col-md-5.col-lg-4
+            section#results-city-by-city.block-bot-lg
+              .overflow-auto
+                h3.pull-left City by City
+                h4.pull-right.text-grey View all results
+              hr
+              h4 74 articles found
+              .block-ver-sm: +sm-item("/img/square.jpg", "Shop", "New York", "Acne Studios", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "Shop", "New York", "Acne Studios", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "Shop", "New York", "Acne Studios", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "Shop", "New York", "Acne Studios", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "Shop", "New York", "Acne Studios", "", "")
+              hr.hr-alt
+
+            section#results-news.block-bot-lg
+              .overflow-auto
+                h3.pull-left News
+                h4.pull-right.text-grey View all results
+              hr
+              h4 28 articles found
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+
+            section#results-blog.block-bot-lg
+              .overflow-auto
+                h3.pull-left Blog
+                h4.pull-right.text-grey View all results
+              hr
+              h4 12 articles found
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "Category", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "Category", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "Category", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "Category", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
+              .block-ver-sm: +sm-item("/img/square.jpg", "July 5th, 2016", "Category", "Italy's coin set to sell Milan luxury story Excelsior to China's Canudilo.", "", "")
+              hr.hr-alt
