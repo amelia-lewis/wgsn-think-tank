@@ -12,10 +12,20 @@ html
     link(href="https://fonts.googleapis.com/css?family=Coming+Soon", rel="stylesheet", type="text/css")
     link(rel="shortcut icon", type="image/x-icon", href="https://www.wgsn.com/wp-content/themes/stylesight/favicon.ico")
   
-  body(class=bodyclass)
+  body(class="show-breaking-news " + bodyclass)
     header.bg-black
       .content-wrap
         a.pull-right.block-sm(href="/search-results") Search results
+
+    .breaking-news-alert.block-md.bg-lt-grey
+      .content-wrap
+        .row
+          .col-xs-11
+            h4.tight Breaking news
+            p.tight Nike Shakeup Creates Three-Man Race to Succeed Parker as CEO
+
+          .col-xs-1.text-right
+            .close-breaking-news X
     
     #content
       block content

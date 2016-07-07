@@ -1,0 +1,22 @@
+.breaking-news-alert
+  position: absolute
+  top: 40px
+  left: 0
+  width: 100%
+  display: none
+
+  p
+    font-size: 2em
+
+  .close-breaking-news
+    cursor: pointer
+
+body.show-breaking-news
+  .breaking-news-alert
+    display: block
+  
+  #content
+    margin-top: 40px + 105px
+
+    .main-title
+      transform: translate3d(0, 105px, 0)
