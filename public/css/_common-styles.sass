@@ -26,12 +26,13 @@ hr
   border: none
   background: black
   height: 3px
-  margin: 0 0 20px
+  margin: 0 auto 20px
+  max-width: 1500px
 
   &.hr-alt
     background: $lt-grey
     height: 1px
-    margin: 0
+    margin: 0 auto
 
 .bg-black
   background: black
@@ -46,15 +47,25 @@ hr
 .bg-lt-grey
   background: $lt-grey
 
-
-@media (min-width: $screen-xs-min)
-  #news
-    margin-top: 80px
-
 @media (min-width: $screen-sm-min)
   #news
-    margin-top: 100px
+    margin-top: 80px
 
 // @media (max-width: $screen-xs-min)
 //   #featured-stories
 //     margin-top: 30px
+
+
+// ====================
+// Buttons
+// ====================
+button
+  appearance: none
+  box-shadow: none
+  background: white
+  border: 2px solid black
+  height: 40px
+  padding: 9px 20px
+  font-family: "Coming Soon", sans-serif
+  font-size: 1em
+  @extend .text-uppercase

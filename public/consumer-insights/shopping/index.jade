@@ -5,10 +5,10 @@ block append vars
 
 mixin report-item(img, date, title, category)
   .report-item
-    .img(style="background-image: url(" + img + ");")
-    .text.block-ver-md.text-center
+    img(src="/img/square.jpg" width="100%")
+    .text.block-top-sm.block-bot-md.text-center
       p.text-uppercase.text-grey.text-smaller= date
-      h2.text-uppercase= title
+      h3.text-uppercase= title
       p= description
       //- p.text-uppercase.text-grey.text-smaller= category
 
@@ -16,17 +16,20 @@ block content
   .content-wrap
     .btn-menu.block-ver-xs.block-hor-sm.bg-black.text-uppercase.text-smaller Menu
     .row
-      .col-xs-12.col-sm-2.bg-xlt-grey.sub-nav-container
+      .col-lg-2.bg-xlt-grey.sub-nav-container
         include ../../partials/sub-nav
 
-      .col-xs-12.col-sm-10.block-top-md
+      .col-xs-12.col-sm-12.col-md-12.col-lg-10.block-top-md
         a(href="/consumer-insights"): h4.directory-page-subtitle Consumer Insights
         hr
         h1 Shopping Trends
 
         - var n = 0
         .row
-          while n < 30
-            .col-xs-12.col-sm-4.col-md-3
+          while n < 28
+            .col-xs-6.col-sm-4.col-md-3
               +report-item("", "July 5th, 2016", "Modern India - Social & Cultural Influences", "Social media")
             - n++
+
+          .col-xs-12.text-center.block-ver-lg
+            button Load more

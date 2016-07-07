@@ -1,7 +1,7 @@
 mixin featured-story(img, date, title, description, category)
   .featured-story
-    .img(style="background-image: url(" + img + ");")
-    .text.block-ver-md.block-hor-sm.text-center
+    img(src="/img/rectangle.jpg" width="100%")
+    .text.block-top-sm.block-bot-md.block-hor-sm.text-center
       p.text-uppercase.text-grey.text-smaller= date
       h2.text-uppercase= title
       p.description= description

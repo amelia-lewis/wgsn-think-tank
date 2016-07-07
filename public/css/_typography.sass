@@ -115,20 +115,17 @@ ul.ul-bare
   font-size: 2.4em
   line-height: 1em
   display: none
+  z-index: 100
 
-  @media (min-width: $screen-xs-min)
+  @media (min-width: $screen-sm-min)
     font-size: 6em
     display: block
 
-  @media (min-width: $screen-sm-min)
+  @media (min-width: $screen-md-min)
     font-size: 8em
 
   @media (min-width: 1500px)
     right: calc((100vw - 1500px) / 2)
-
-.directory-page-subtitle
-  @media (max-width: $screen-xs-min)
-    transform: translate3d(60px, 0, 0)
 
 body.headroom--not-top
   .main-title

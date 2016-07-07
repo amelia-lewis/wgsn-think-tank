@@ -1,10 +1,9 @@
 mixin news-item(img, date, title)
-  .news-item
-    .img.pull-left(style="background-image: url(" + img + ");")
-    .text.pull-left.block-hor-sm
-      .text-aligner
-        p.text-uppercase.text-grey.text-smaller.tight= date
-        p.tight= title
+  .news-item.overflow-auto
+    img(src="/img/square.jpg" width="100")
+    .text.block-hor-sm
+      p.text-uppercase.text-grey.text-smaller.tight= date
+      p.tight= title
 
 section#news.block-top-md
   h4 News
@@ -13,7 +12,7 @@ section#news.block-top-md
   .block-ver-md: hr.hr-alt
   +news-item("", "July 5th, 2016", "Nike sales, future orders disappoint as adidas gains ground.")
   .block-ver-md: hr.hr-alt
-  +news-item("", "July 5th, 2016", "Selfridges opens pop-up store theatre as part of Shakespeare anniversary celebrations.")
+  +news-item("", "July 5th, 2016", "Much ado about fashion as Selfridges opens pop-up store theatre as part of Shakespeare anniversary celebrations.")
   .block-ver-md: hr.hr-alt
   +news-item("", "July 5th, 2016", "Market weakness hits J Front shares as quarterly sales, profits slump.")
   .block-ver-md: hr.hr-alt

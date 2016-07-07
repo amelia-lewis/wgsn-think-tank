@@ -1,10 +1,9 @@
 mixin recommended-item(img, date, title)
-  .recommended-item
-    .img.pull-left(style="background-image: url(" + img + ");")
-    .text.pull-left.block-hor-sm
-      .text-aligner
-        //- p.text-uppercase.text-grey.text-smaller.tight= date
-        p.tight.text-uppercase= title
+  .recommended-item.overflow-auto
+    img(src="/img/square.jpg" width="100")
+    .text.block-hor-sm
+      //- p.text-uppercase.text-grey.text-smaller.tight= date
+      p.tight.text-uppercase= title
 
 section#recommended-for-you.block-top-md
   h4 Recommended for You
