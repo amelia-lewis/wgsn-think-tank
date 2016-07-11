@@ -4,7 +4,7 @@ include ../partials/mixins/lg-item
 //- img, info1, info2, title, description
 
 block append vars
-  - bodyclass = 'category-view'
+  - bodyclass = 'videos-view'
 
 block content
   .content-wrap
@@ -16,13 +16,24 @@ block content
       .col-xs-12.col-sm-12.col-md-12.col-lg-10.block-top-md
         h4.directory-page-subtitle &nbsp;
         hr
-        h1 Consumer Insights
+        h1 Videos
+
+        .row
+          .col-xs-12
+            #video-container.bg-black.text-center
+              img(src="../img/rectangle.jpg")
+
+        .row.block-top-md.block-bot-lg.text-center
+          .col-xs-12
+            p.text-uppercase.text-grey.text-smaller.tight June 28th, 2016
+            h2.tight WGSN Cityscape: Lisbon
+            p.text-uppercase.text-grey.text-smaller.tight 2 mins 30 secs
 
         - var n = 0
         .row
           while n < 28
             .col-xs-6.col-sm-4.col-md-3
-              +lg-item("../img/square.jpg", "July 5th, 2016", "Social media", "Modern India - Social & Cultural Influences", "")
+              +lg-item("../img/rectangle.jpg", "July 5th, 2016", "2 mins 40 secs", "Modern India - Social & Cultural Influences", "")
             - n++
 
           .col-xs-12.text-center.block-ver-lg
