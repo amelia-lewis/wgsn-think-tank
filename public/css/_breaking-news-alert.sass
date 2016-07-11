@@ -6,7 +6,11 @@
   display: none
 
   p
-    font-size: 2em
+    @media (min-width: $screen-sm-min)
+      font-size: 1.4em
+
+    @media (min-width: $screen-md-min)
+      font-size: 2em
 
   .close-breaking-news
     cursor: pointer
@@ -14,9 +18,23 @@
 body.show-breaking-news
   .breaking-news-alert
     display: block
-  
+
   #content
-    margin-top: 40px + 105px
+    margin-top: 40px + 103px
 
     .main-title
-      transform: translate3d(0, 105px, 0)
+      transform: translate3d(0, 103px, 0)
+  
+  @media (min-width: $screen-sm-min)
+    #content
+      margin-top: 40px + 91px
+
+      .main-title
+        transform: translate3d(0, 91px, 0)
+
+  @media (min-width: $screen-md-min)
+    #content
+      margin-top: 40px + 105px
+
+      .main-title
+        transform: translate3d(0, 105px, 0)
